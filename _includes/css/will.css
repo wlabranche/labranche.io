@@ -1,0 +1,212 @@
+html {
+  font-family: "PT Serif", Georgia, "Times New Roman", serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "FreightSans Pro", "PT Sans", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: #313131;
+  letter-spacing: -0.025rem; }
+
+.sidebar {
+  font-family: "FreightSans Pro", "PT Sans", Helvetica, Arial, sans-serif; }
+
+.pagination {
+  font-family: "FreightSans Pro", "PT Sans", Helvetica, Arial, sans-serif; }
+
+input,
+textarea,
+button {
+  font: inherit;
+  font-family: "FreightSans Pro", "PT Sans", Helvetica, Arial, sans-serif; }
+
+input[type="text"],
+textarea {
+  border: 1px solid #333333; }
+
+textarea {
+  resize: vertical; }
+
+button {
+  cursor: pointer; }
+
+/* global element styles */
+.with-focus-effect {
+  outline: 8px solid transparent;
+  transition: outline 0.2s ease-in-out; }
+  .with-focus-effect:focus {
+    outline: 1px solid #333333; }
+
+/* overrides */
+.masthead-title small {
+  font-size: 16px;
+  text-transform: uppercase; }
+
+/* Home page styles */
+@keyframes fadeDark {
+  0% {
+    background: rgba(0, 0, 0, 0.75); }
+
+  100% {
+    background: rgba(0, 0, 0, 0.5); } }
+
+@keyframes fadeOutLight {
+  0% {
+    background: white; }
+
+  100% {
+    background: transparent; } }
+
+@keyframes fadeInAndDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem); }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes fadeInAndUp {
+  0% {
+    opacity: 0;
+    transform: translateY(4em); }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+.home--body {
+  background-image: url("{{ site.baseurl }}/public/img/capitola.JPG");
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+  height: 100vh;
+  color: white; }
+  .home--body:before, .home--body:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .home--body:before {
+    animation: fadeDark 1.5s ease-out both; }
+
+.home--info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  z-index: 1;
+  text-align: center; }
+  .home--info h2,
+  .home--info li {
+    color: white; }
+  .home--info .name {
+    font-size: 2em;
+    font-weight: 100;
+    animation: fadeInAndDown 0.5s ease-out 0.5s both; }
+  .home--info .tagline {
+    font-size: 0.75em;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeInAndDown 0.5s ease-out 0.75s both; }
+  .home--info .name,
+  .home--info .tagline {
+    display: block; }
+
+.channel-links {
+  padding-left: 0; }
+  .channel-links li {
+    font-family: "FreightSans Pro", "PT Sans", Helvetica, Arial, sans-serif;
+    font-size: 1.25em;
+    display: block;
+    padding: 0.5rem 0.25rem;
+    list-style-type: none;
+    animation: fadeInAndUp 0.4s ease-out both; }
+    .channel-links li a {
+      color: white; }
+
+.channel-links li:nth-of-type(5) {
+  animation-delay: 1.15s; }
+
+.channel-links li:nth-of-type(4) {
+  animation-delay: 1.05s; }
+
+.channel-links li:nth-of-type(3) {
+  animation-delay: 0.95s; }
+
+.channel-links li:nth-of-type(2) {
+  animation-delay: 0.85s; }
+
+.channel-links li:nth-of-type(1) {
+  animation-delay: 0.75s; }
+
+/* contact page */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+
+  100% {
+    transform: rotate(360deg); } }
+
+.response-message {
+  display: none; }
+
+.contact-control {
+  margin-bottom: 1rem; }
+  .contact-control label,
+  .contact-control input,
+  .contact-control textarea {
+    width: 100%;
+    display: block; }
+  .contact-control label {
+    font-size: 75%;
+    font-weight: bold;
+    font-family: "FreightSans Pro", "PT Sans", Helvetica, Arial, sans-serif;
+    text-transform: uppercase; }
+  .contact-control input,
+  .contact-control textarea {
+    padding: 0.25rem 0.5rem; }
+  .contact-control textarea {
+    height: 12em; }
+
+@media (min-width: 38em) {
+  .contact-control-pair {
+    display: flex; }
+    .contact-control-pair .contact-control {
+      flex: 1; }
+      .contact-control-pair .contact-control:first-of-type {
+        margin-right: 1rem; } }
+
+.email-send {
+  background: transparent;
+  border: 1px solid #dddddd;
+  padding: 0.5rem 1rem;
+  margin: 2rem auto 1rem;
+  display: block;
+  max-width: 100%;
+  width: 12rem; }
+
+.response-message {
+  font-family: "FreightSans Pro", "PT Sans", Helvetica, Arial, sans-serif;
+  text-align: center; }
+
+.status-icon {
+  font-family: sans-serif;
+  font-size: 4rem;
+  color: #dddddd; }
+
+.error-icon {
+  color: rgba(192, 57, 43, 0.5); }
+
+.success-icon {
+  color: rgba(39, 174, 96, 0.5); }
+
+/* tables */
+.cell-negative {
+  background: rgba(231, 76, 60, 0.2); }
+
+.cell-positive {
+  background: rgba(46, 204, 113, 0.2); }

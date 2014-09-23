@@ -2,22 +2,22 @@ html {
   font-family: "PT Serif", Georgia, "Times New Roman", serif; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "FreightSans Pro", "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   font-weight: 300;
   color: #313131;
   letter-spacing: -0.025rem; }
 
 .sidebar {
-  font-family: "FreightSans Pro", "PT Sans", Helvetica, Arial, sans-serif; }
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; }
 
 .pagination {
-  font-family: "FreightSans Pro", "PT Sans", Helvetica, Arial, sans-serif; }
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; }
 
 input,
 textarea,
 button {
   font: inherit;
-  font-family: "FreightSans Pro", "PT Sans", Helvetica, Arial, sans-serif; }
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; }
 
 input[type="text"],
 textarea {
@@ -119,10 +119,10 @@ button {
 .channel-links {
   padding-left: 0; }
   .channel-links li {
-    font-family: "FreightSans Pro", "PT Sans", Helvetica, Arial, sans-serif;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     font-size: 1.25em;
-    display: block;
-    padding: 0.5rem 0.25rem;
+    display: inline;
+    padding: 0.5rem 1.25rem;
     list-style-type: none;
     animation: fadeInAndUp 0.4s ease-out both; }
     .channel-links li a {
@@ -164,7 +164,7 @@ button {
   .contact-control label {
     font-size: 75%;
     font-weight: bold;
-    font-family: "FreightSans Pro", "PT Sans", Helvetica, Arial, sans-serif;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     text-transform: uppercase; }
   .contact-control input,
   .contact-control textarea {
@@ -190,7 +190,7 @@ button {
   width: 12rem; }
 
 .response-message {
-  font-family: "FreightSans Pro", "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   text-align: center; }
 
 .status-icon {
